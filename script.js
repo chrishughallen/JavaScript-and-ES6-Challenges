@@ -9,12 +9,13 @@ Use ES6 whenever possible.
 "use strict";
 
 // Write code here
+const sum = (...args) => args.reduce((a,b) => a+b)
 
-sum(1, 3);
+console.log(sum(1, 3));
 //4
 
-sum(10, 20, 5);
+console.log(sum(10, 20, 5));
 //35
 
-sum(2, 5, 80, 1, 10, 12);
+console.log(sum(2, 5, 80, 1, 10, 12));
 //110
